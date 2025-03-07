@@ -1,0 +1,22 @@
+[project]
+name = "popular-spain-words-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiogram>=3.18.0",
+    "aioschedule>=0.5.2",
+    "asyncpg>=0.30.0",
+    "brotli>=1.1.0",
+    "crontab>=1.0.1",
+    "environs>=14.1.1",
+    "pydantic-settings>=2.8.1",
+    "python-crontab>=3.2.0",
+    "sqlalchemy[asyncio]>=2.0.38",
+    "uvloop>=0.21.0",
+]
+
+[tool.uv]
+package = true
