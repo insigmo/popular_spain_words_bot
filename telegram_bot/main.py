@@ -54,8 +54,8 @@ async def change_time(message: types.Message) -> None:
         return
 
     hour = int(hour[0])
-
-    message.from_user.values['what_hour'] = hour
+    data = message.from_user.values[:]
+    data['what_hour'] = hour
     await db_add_or_update_user(message.from_user.values)
 
     await message.answer(f'Вы теперь будете получать уведомления в {hour} часов. \nСчастливого вам дня!')

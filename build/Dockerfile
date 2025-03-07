@@ -9,5 +9,3 @@ WORKDIR $HOME
 COPY ./ /app/
 RUN pip install uv
 RUN uv sync
-
-ENTRYPOINT ["uv", "run", "/app/telegram_bot/main.py"]

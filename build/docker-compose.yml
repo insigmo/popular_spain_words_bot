@@ -11,6 +11,7 @@ services:
       - postgres_db
     depends_on:
       - postgres_db
+    entrypoint: ["uv", "run", "/app/run.py"]
 
   postgres_db:
     restart: always
